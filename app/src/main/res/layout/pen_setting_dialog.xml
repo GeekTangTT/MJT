@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.wxiwei.office.system.dialog.ColorPickerView n1:id="@id/colorPickerView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="40.0dip" n1:layout_marginRight="40.0dip" n1:layout_marginBottom="5.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+        <TextView n1:layout_gravity="center" n1:id="@id/strokeText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Stroke" />
+        <SeekBar n1:id="@id/strokeBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:max="10" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="5.0dip">
+        <TextView n1:layout_gravity="center" n1:id="@id/alphaView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Alpha" />
+        <SeekBar n1:id="@id/alphaBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="14.0dip" n1:max="255" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <Button n1:id="@id/ok" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="OK" n1:layout_weight="1.0" />
+        <Button n1:id="@id/cancel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Cancel" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

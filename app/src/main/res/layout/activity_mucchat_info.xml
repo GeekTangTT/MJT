@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/mucchat_back" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" />
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/white" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="@string/back" />
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/mucchat_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/group_info" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/mjtmuchchatinfo_disturb" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:src="@drawable/icon_disturb" n1:layout_toRightOf="@id/mucchat_title" n1:layout_centerVertical="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <ScrollView n1:id="@id/scroll_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:paddingTop="31.0px" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.olym.mjt.widget.MyGridView n1:gravity="fill" n1:id="@id/grid_view" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_margin="10.0dip" n1:listSelector="#00000000" n1:cacheColorHint="#00000000" n1:horizontalSpacing="20.0dip" n1:verticalSpacing="20.0dip" n1:numColumns="5" />
+            <LinearLayout n1:gravity="center" n1:id="@id/llayout_look_more" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0px" n1:layout_marginBottom="15.0px">
+                <TextView n1:textSize="32.0px" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/see_more" />
+            </LinearLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="20.0px" />
+            <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="28.0px" />
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_name_rl" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/room_name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/group_name" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:ellipsize="end" n1:id="@id/room_name_tv" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="23.0px" n1:maxEms="12" n1:singleLine="true" n1:layout_toLeftOf="@id/room_name_arrow_img" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/room_name_arrow_img" n1:background="@drawable/icon_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_notice" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/room_notice_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/group_notify" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:ellipsize="end" n1:id="@id/room_notice_tv" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="23.0px" n1:maxEms="12" n1:singleLine="true" n1:layout_toLeftOf="@id/room_notice_arrow_img" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/room_notice_arrow_img" n1:background="@drawable/icon_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_member_max" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/room_member_max_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/room_max_member" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:id="@id/room_member_max_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="68.0px" n1:text="1000" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="28.0px" />
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_files" style="@style/MucChatTable">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/room_files_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/room_file" n1:layout_centerVertical="true" />
+                <ImageView n1:id="@id/room_files_img" n1:background="@drawable/icon_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_msg_search" style="@style/MucChatTable">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/roominfo_msg_search" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/msg_search" n1:layout_centerVertical="true" />
+                <ImageView n1:background="@drawable/icon_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="28.0px" />
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_nick_name" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/mine_room_nick_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/mine_room_nick_name" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/tv_size_small" n1:ellipsize="end" n1:id="@id/room_nick_name_tv" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="23.0px" n1:maxEms="7" n1:singleLine="true" n1:layout_toLeftOf="@id/room_nick_name_img" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/room_nick_name_img" n1:background="@drawable/icon_right_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/room_disturb" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/mine_room_disturb" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/mine_room_disturb" n1:layout_centerVertical="true" />
+                    <com.suke.widget.SwitchButton n1:id="@id/room_disturb_check" n1:layout_width="103.0px" n1:layout_height="63.0px" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <View n1:background="@color/gray_line" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+                <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/abadon_voice" n1:visibility="gone" style="@style/MucChatTable">
+                    <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/abadon_voice_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/abadon_voice" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/abadon_voice_img" n1:background="@drawable/icon_right_arrow" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="28.0px" />
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/clear_muc_chat" style="@style/MucChatTable">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/clear_mucchat_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/clear_mucchat_message" n1:layout_centerVertical="true" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <com.zhy.autolayout.AutoLinearLayout n1:gravity="center" n1:background="@color/bg_color_white" n1:paddingTop="40.0px" n1:paddingBottom="40.0px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/delate_checkout" n1:background="@drawable/shape_corner_red" n1:layout_width="691.0px" n1:layout_height="89.0px" n1:text="@string/deleteandout" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:id="@id/item_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout n1:orientation="horizontal" n1:id="@id/item_file" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <CheckBox n1:layout_gravity="center_vertical" n1:id="@id/file_check" n1:background="@drawable/checkbox_style" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0px" n1:button="@null" n1:layout_alignParentRight="true" />
+        <ImageView n1:id="@id/item_iv" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_margin="20.0dip" n1:src="@drawable/file" />
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="16.0sp" n1:textColor="#ff000000" n1:gravity="center_vertical" n1:id="@id/item_tv" n1:layout_width="wrap_content" n1:layout_height="0.0dip" n1:text="" n1:layout_weight="1.0" />
+            <View n1:background="#50505050" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

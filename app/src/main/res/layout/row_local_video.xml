@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/list_selector_background" n1:padding="5.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:gravity="center_vertical" n1:id="@id/left_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+        <ImageView n1:id="@id/thumbnail_img" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:scaleType="centerCrop" n1:contentDescription="@string/app_name" />
+        <ImageView n1:layout_gravity="center" n1:padding="5.0dip" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:src="@drawable/feed_main_player_play" n1:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_toRightOf="@id/left_layout" n1:layout_centerVertical="true">
+        <TextView n1:id="@id/des_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:id="@id/create_time_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" />
+        <TextView n1:id="@id/length_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" />
+        <TextView n1:id="@id/size_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</RelativeLayout>

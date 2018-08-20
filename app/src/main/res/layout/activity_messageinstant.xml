@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/mjt_instantmessage_back" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+            <ImageView n1:id="@id/backimg" n1:background="@drawable/selector_title_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView n1:textSize="32.0px" n1:textColor="@color/black" n1:id="@id/mjt_user_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="@string/select_contect_content" n1:layout_toRightOf="@id/backimg" n1:layout_centerInParent="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView n1:textSize="16.0sp" n1:textColor="@color/tv_textcolor_selector" n1:gravity="center_vertical" n1:id="@id/tv_create_newmessage" n1:layout_width="fill_parent" n1:layout_height="102.0px" n1:layout_marginLeft="35.0px" n1:text="@string/create_new_chat" />
+    <TextView n1:textSize="11.0sp" n1:textColor="#99000000" n1:background="#66676767" n1:paddingLeft="8.0dip" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/recent_chat" />
+    <ListView n1:id="@id/lv_recently_message" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="6.0dip" n1:layout_marginRight="6.0dip" n1:divider="#20000000" n1:dividerHeight="0.5dip" />
+</com.zhy.autolayout.AutoLinearLayout>

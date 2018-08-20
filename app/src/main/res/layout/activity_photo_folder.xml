@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <ListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:cacheColorHint="@android:color/transparent" n1:divider="@null" n1:dividerHeight="0.0px" n1:fadeScrollbars="false" n1:overScrollMode="never" />
+</LinearLayout>

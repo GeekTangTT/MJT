@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@color/bg_color_white"
+    n1:orientation="vertical">
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="88.0px">
+
+        <include layout="@layout/topbar_layout" />
+
+        <TextView
+            n1:id="@id/tv_edit"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_alignParentRight="true"
+            n1:layout_centerVertical="true"
+            n1:layout_marginRight="15.0px"
+            n1:gravity="center_vertical"
+            n1:paddingLeft="15.0px"
+            n1:paddingRight="15.0px"
+            n1:text="@string/edit"
+            n1:textColor="@drawable/selector_tv_title_right"
+            n1:textSize="@dimen/tv_size_middle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="471.0px"
+        n1:background="@android:color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            n1:id="@id/iv_head"
+            n1:layout_width="136.0px"
+            n1:layout_height="136.0px"
+            n1:layout_centerHorizontal="true"
+            n1:layout_marginTop="61.0px"
+            n1:src="@drawable/icon_head" />
+
+        <TextView
+            n1:id="@id/tv_name"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_below="@id/iv_head"
+            n1:layout_centerHorizontal="true"
+            n1:layout_marginTop="30.0px"
+            n1:text=""
+            n1:textColor="@color/tv_colors_deep"
+            n1:textSize="@dimen/tv_size_normal" />
+
+        <TextView
+            n1:id="@id/tv_phone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="30.0px"
+            n1:layout_marginTop="364.0px"
+            n1:text=""
+            n1:textColor="@color/tv_colors_deep"
+            n1:textSize="@dimen/tv_size_normal" />
+
+        <LinearLayout
+            n1:id="@id/ll_sys_call"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentRight="true"
+            n1:layout_marginRight="30.0px"
+            n1:layout_marginTop="317.0px"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical">
+
+            <ImageView
+                n1:layout_width="81.0px"
+                n1:layout_height="81.0px"
+                n1:src="@drawable/selector_sys_call" />
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="18.0px"
+                n1:text="@string/title_sys_sip"
+                n1:textColor="@color/main_colors"
+                n1:textSize="@dimen/tv_size_smallest" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:id="@id/ll_sys_chat"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignTop="@id/ll_sys_call"
+            n1:layout_marginRight="60.0px"
+            n1:layout_toLeftOf="@id/ll_sys_call"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical">
+
+            <ImageView
+                n1:layout_width="81.0px"
+                n1:layout_height="81.0px"
+                n1:src="@drawable/selector_sys_message" />
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="18.0px"
+                n1:text="@string/title_sys_chat"
+                n1:textColor="@color/main_colors"
+                n1:textSize="@dimen/tv_size_smallest" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/gray_line" />
+</LinearLayout>

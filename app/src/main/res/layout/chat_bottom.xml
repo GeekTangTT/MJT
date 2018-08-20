@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:id="@id/chat_botom_linear" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/chat_bottom" n1:paddingLeft="3.0dip" n1:paddingTop="7.0dip" n1:paddingRight="3.0dip" n1:paddingBottom="7.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.zhy.autolayout.AutoLinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/left_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="5.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+            <ImageButton n1:id="@id/voice_img_btn" n1:background="@drawable/im_voice_nor" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:contentDescription="@string/app_name" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <FrameLayout n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_toLeftOf="@id/right_layout" n1:layout_toRightOf="@id/left_layout" n1:layout_centerVertical="true">
+            <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.olym.mjt.module.message.utils.MentionEditText n1:layout_gravity="center_vertical" n1:id="@id/chat_edit" n1:background="@drawable/chat_bottom" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="5" n1:singleLine="true" n1:inputType="textMultiLine" n1:textCursorDrawable="@drawable/main_color_cursor" />
+                <TextView n1:textSize="25.0px" n1:textColor="@color/grey" n1:id="@id/text_limit" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0px" n1:text="" n1:layout_alignBottom="@id/chat_edit" n1:layout_alignParentRight="true" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <ImageButton n1:layout_gravity="center_vertical" n1:id="@id/record_btn" n1:background="@drawable/im_voice_button_normal" n1:padding="3.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout n1:orientation="horizontal" n1:id="@id/right_layout" n1:layout_width="85.0dip" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <ImageButton n1:layout_gravity="right" n1:id="@id/send_btn" n1:background="@drawable/im_btn_send_bg" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" />
+            <ImageButton n1:layout_gravity="left" n1:id="@id/emotion_btn" n1:background="@drawable/im_btn_emotion_bg" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="2.0dip" n1:contentDescription="@string/app_name" />
+            <ImageButton n1:layout_gravity="right" n1:id="@id/more_btn" n1:background="@drawable/im_btn_more_bg" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="6.0dip" n1:layout_marginRight="8.0dip" n1:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <FrameLayout n1:background="#fffcfcfc" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mjt.mjt.module.message.view.ChatFaceView n1:id="@id/chat_face_view" n1:background="#fffcfcfc" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:hasGif="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <include n1:id="@id/chat_tools_view" n1:visibility="gone" layout="@layout/chat_tools_view" />
+    </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

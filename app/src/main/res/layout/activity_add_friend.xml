@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_search" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="95.0px">
+        <ImageView n1:layout_width="26.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_search_blue" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="#ffb2b3b6" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0px" n1:text="@string/phone_number" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_phone_contacts" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="110.0px">
+        <ImageView n1:layout_width="80.0px" n1:layout_height="80.0px" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_contacts_contacts" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0px" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/phone_contacts" />
+            <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/add_friend_from_phone_contacts" />
+        </LinearLayout>
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+</LinearLayout>

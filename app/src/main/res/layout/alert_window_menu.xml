@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/icon_call_float_view" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Chronometer n1:textSize="@dimen/tv_size_smallest" n1:textColor="#ff4cd964" n1:id="@id/chronometer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="16.0px" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

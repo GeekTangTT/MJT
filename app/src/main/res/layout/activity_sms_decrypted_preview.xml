@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/relative_textviewscan" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0px" n1:layout_marginTop="20.0px" n1:layout_marginRight="20.0px">
+        <TextView n1:textSize="60.0px" n1:textColor="@color/black" n1:id="@id/tv" n1:scrollbars="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="false" n1:layout_centerInParent="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

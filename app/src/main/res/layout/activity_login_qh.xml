@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_tips" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="245.0px" n1:text="@string/input_6_pin" />
+    <com.mjt.mjt.widget.CodeView
+        n1:textSize="0.0sp" n1:id="@id/codeview" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="70.0px" n1:layout_marginTop="50.0px" n1:layout_marginRight="70.0px" n1:cursorVisible="false" n1:maxLength="6" n1:inputType="numberPassword" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_next" n1:background="@drawable/selector_main_color" n1:layout_width="500.0px" n1:layout_height="90.0px" n1:layout_marginTop="97.0px" n1:text="" />
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:gravity="center" n1:id="@id/tv_reset_pin" n1:padding="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0px" n1:text="@string/reset_pin" />
+</LinearLayout>

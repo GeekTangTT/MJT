@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <ImageView n1:id="@id/iv_icon" n1:layout_width="241.0px" n1:layout_height="241.0px" n1:layout_marginTop="80.0px" n1:src="@drawable/icon_about_logo" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_content" n1:layout_width="wrap_content" n1:layout_height="0.0dip" n1:layout_marginTop="35.0px" n1:layout_weight="1.0" />
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_1" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="深圳奥联信息安全技术有限公司 版权所有" />
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_2" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0px" n1:layout_marginBottom="30.0px" n1:text="Copyright @ 2016 OlymTech.All Right Reserved" />
+</LinearLayout>

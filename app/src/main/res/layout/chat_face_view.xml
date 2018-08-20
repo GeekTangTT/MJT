@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:background="#fffcfcfc" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager n1:id="@id/view_pager" n1:layout_width="fill_parent" n1:layout_height="288.0px" n1:layout_alignParentTop="true" />
+    <com.zhy.autolayout.AutoLinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/chat_face_point_loy" n1:layout_width="fill_parent" n1:layout_height="60.0px" n1:layout_below="@id/view_pager" />
+    <TextView n1:id="@id/emoji_bottom_line" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_below="@id/chat_face_point_loy" />
+    <com.zhy.autolayout.AutoRelativeLayout n1:background="@color/emoji_bottom" n1:layout_width="fill_parent" n1:layout_height="80.0px" n1:layout_below="@id/emoji_bottom_line">
+        <RadioGroup n1:orientation="horizontal" n1:id="@id/face_btn_layout" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <RadioButton n1:gravity="center_vertical" n1:background="@color/smile_bg" n1:paddingLeft="32.0px" n1:paddingRight="32.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:drawableBottom="@drawable/smile" />
+            <RadioButton n1:gravity="center" n1:id="@id/moya_face_gif" n1:background="@drawable/face_chang_bg" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:button="@null" n1:drawableBottom="@drawable/face_button_2" />
+        </RadioGroup>
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:gravity="center" n1:id="@id/default_face" n1:background="@color/smile_bg" n1:paddingLeft="32.0px" n1:paddingRight="32.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/smile" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/emoji_send" n1:background="@color/main_colors" n1:layout_width="160.0px" n1:layout_height="fill_parent" n1:text="@string/send" n1:layout_alignParentRight="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_grey" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_recommend" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="95.0px" n1:layout_marginTop="21.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/recommend_to_friends" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_chat_files" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="95.0px" n1:layout_marginTop="21.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/room_file" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_chat_history" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="95.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/find_chat_history" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_domain" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="95.0px" n1:layout_marginTop="21.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/domain" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:id="@id/tv_domain" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="95.0px" n1:layout_marginTop="21.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/add_blacklist" n1:layout_weight="1.0" />
+        <com.suke.widget.SwitchButton n1:id="@id/sb_black" n1:layout_width="103.0px" n1:layout_height="63.0px" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_delete" n1:background="@drawable/selector_red" n1:layout_width="fill_parent" n1:layout_height="90.0px" n1:layout_margin="40.0px" n1:text="@string/delete" />
+</LinearLayout>

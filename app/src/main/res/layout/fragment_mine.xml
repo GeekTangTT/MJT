@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_mine_info" n1:background="@drawable/bg_mine_info" n1:layout_width="fill_parent" n1:layout_height="281.0px" n1:layout_margin="30.0px">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="40.0px" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_large" n1:textStyle="bold" n1:textColor="@android:color/black" n1:id="@id/tv_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffa3a5a8" n1:id="@id/tv_phone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0px" />
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_head" n1:layout_width="108.0px" n1:layout_height="108.0px" n1:layout_marginRight="40.0px" n1:src="@drawable/icon_head" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/ll_group2" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_contacts" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_contacts" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/encry_contacts" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:id="@id/v_line_contacts" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_file" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_file" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/file_encrypt" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/encry_fils" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_photo" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_photo" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/photo_encrypt" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/encry_pics" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+        <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="40.0px" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/ll_mine_password_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_password" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_secure" />
+                <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/secure_manager" n1:layout_weight="1.0" />
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+            </LinearLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_keeplive" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_keeplive" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/keep_live" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:id="@id/v_mine_keeplive" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_update" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_update" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/version_update" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="40.0px" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_mine_settings" n1:background="@drawable/selector_bg_white" n1:paddingLeft="45.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_mine_settings" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/settings" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/photopicker_toolbar" />
+    <com.mjt.mjt.module.message.file.ViewPagerFixed
+        n1:id="@id/vp_photos" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/pickerToolbar" />
+    <ImageButton n1:id="@id/download_pic" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="36.0px" n1:layout_marginBottom="36.0px" n1:src="@drawable/file_install" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

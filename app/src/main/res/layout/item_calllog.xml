@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/iv_type" n1:layout_width="32.0px" n1:layout_height="32.0px" n1:layout_marginLeft="24.0px" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_phone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="24.0px" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="#ffa7a7a7" n1:id="@id/tv_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <FrameLayout n1:id="@id/call_detail" n1:paddingLeft="24.0px" n1:paddingTop="45.0px" n1:paddingRight="30.0px" n1:paddingBottom="45.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageView n1:layout_width="40.0px" n1:layout_height="40.0px" n1:src="@drawable/selector_call_detail" />
+        </FrameLayout>
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="23.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

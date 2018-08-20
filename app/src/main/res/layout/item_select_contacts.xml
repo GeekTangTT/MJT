@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="131.0px"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/black" n1:gravity="center_vertical" n1:id="@id/tv_index" n1:background="@color/bg_color_white" n1:paddingLeft="20.0px" n1:layout_width="fill_parent" n1:layout_height="41.0px" n1:text="A" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/select_linner" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+        <ImageView n1:id="@id/select_choose" n1:layout_width="46.0px" n1:layout_height="46.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_choose_normal" />
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/select_head" n1:layout_width="96.0px" n1:layout_height="96.0px" n1:layout_marginLeft="20.0px" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/select_name" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <View n1:id="@id/v_line" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="20.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

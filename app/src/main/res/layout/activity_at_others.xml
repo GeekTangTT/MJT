@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/backtomuchroom" n1:background="@color/status_bar_color" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <ImageView n1:id="@id/backimg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/black" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="@string/choose_contacts_reply" n1:layout_centerInParent="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/list_view" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n2:ptrAnimationStyle="flip" n2:ptrDrawableEnd="@drawable/default_ptr_rotate" n2:ptrDrawableStart="@drawable/default_ptr_flip" n2:ptrHeaderTextColor="@color/tv_colors_deep" n2:ptrMode="disabled" n2:ptrOverScroll="false" n2:ptrScrollingWhileRefreshingEnabled="true" n2:ptrShowIndicator="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.olym.mjt.widget.sortlist.SideBar n1:id="@id/sidebar" n1:background="@android:color/transparent" n1:paddingRight="10.0px" n1:layout_width="60.0px" n1:layout_height="742.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

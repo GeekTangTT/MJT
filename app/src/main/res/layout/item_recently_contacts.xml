@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_recently_contacts_head" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="5.0dip" n1:src="@drawable/icon_head" />
+    <TextView n1:id="@id/tv_recently_contacts_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="14.0dip" n1:layout_toRightOf="@id/iv_recently_contacts_head" n1:layout_centerVertical="true" />
+</RelativeLayout>

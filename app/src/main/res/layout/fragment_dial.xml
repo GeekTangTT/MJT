@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/dial_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/title_app_sip" n1:layout_centerInParent="true" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center" n1:id="@id/v_delete" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:text="@string/clear" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/ll_call_phone_et" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.mjt.mjt.widget.DigitsEditText
+                n1:textAppearance="@style/DialtactsDigitsTextAppearance" n1:textSize="72.0px" n1:textColor="#ff242424" n1:gravity="center" n1:id="@id/digitsText" n1:background="@null" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="165.0px" n1:cursorVisible="false" n1:lines="1" n1:imeOptions="actionGo" n1:imeActionLabel="@string/call" />
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_add_local_contact" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+                <ImageView n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_local_contact_add" />
+                <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/create_new_contact" />
+            </LinearLayout>
+            <View n1:id="@id/v_add_local_contact_line" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        </LinearLayout>
+        <com.mjt.mjt.widget.swipeview.SwipeMenuListView
+            n1:layout_gravity="center" n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawSelectorOnTop="false" n1:cacheColorHint="@android:color/transparent" n1:layout_below="@id/ll_call_phone_et" n1:fadeScrollbars="false" n1:overScrollMode="never" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/ll_call" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <com.mjt.mjt.widget.Dialpad
+                n1:id="@id/dialPad" n1:layout_width="fill_parent" n1:layout_height="496.0px" />
+            <com.mjt.mjt.widget.DialerCallBar
+                n1:orientation="horizontal" n1:id="@id/dialerCallBar" n1:layout_width="fill_parent" n1:layout_height="124.0px" />
+        </LinearLayout>
+        <ImageView n1:id="@id/iv_show_keyboard" n1:visibility="gone" n1:layout_width="151.0px" n1:layout_height="151.0px" n1:layout_marginBottom="47.0px" n1:src="@drawable/selector_dial_show" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

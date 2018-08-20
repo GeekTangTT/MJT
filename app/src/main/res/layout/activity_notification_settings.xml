@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/ll_top" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+        <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="230.0px">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/notify_sound" n1:layout_weight="1.0" />
+                <com.suke.widget.SwitchButton n1:id="@id/sb_sound" n1:layout_width="102.0px" n1:layout_height="65.0px" n1:layout_marginRight="30.0px" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="32.0px" />
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/notify_vibrate" n1:layout_weight="1.0" />
+                <com.suke.widget.SwitchButton n1:id="@id/sb_vibrate" n1:layout_width="102.0px" n1:layout_height="65.0px" n1:layout_marginRight="30.0px" n3:sb_border_width="1.0dip" n3:sb_checked_color="@color/main_colors" n3:sb_enable_effect="true" n3:sb_show_indicator="false" n3:sb_uncheck_color="#ffe6e6e6" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_notificaiton" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="114.0px">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/notify_tips_sound" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_notification" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" />
+        <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_ringtone" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="114.0px">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/incomming_ring" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_ringtone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0px" />
+        <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+</LinearLayout>

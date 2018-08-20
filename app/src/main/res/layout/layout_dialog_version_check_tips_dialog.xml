@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="432.0px" n1:layout_height="740.0px">
+        <RelativeLayout n1:background="@drawable/bg_check_version_tips_dialog" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_version_name" n1:background="@drawable/shape_corner_main_color" n1:layout_width="130.0px" n1:layout_height="40.0px" n1:layout_marginTop="230.0px" n1:layout_marginRight="34.0px" n1:text="" n1:layout_alignParentRight="true" />
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="#ff666666" n1:id="@id/tv_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="53.0px" n1:layout_marginTop="30.0px" n1:layout_marginRight="53.0px" n1:text="" n1:layout_below="@id/tv_version_name" n1:lineSpacingMultiplier="1.2" />
+            <TextView n1:gravity="center" n1:id="@id/tv_ok" n1:background="@drawable/selector_main_color" n1:layout_width="346.0px" n1:layout_height="64.0px" n1:layout_marginLeft="44.0px" n1:layout_marginRight="44.0px" n1:layout_marginBottom="25.0px" n1:text="@string/update_soon" n1:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView n1:id="@id/iv_cancel" n1:layout_width="80.0px" n1:layout_height="80.0px" n1:layout_marginTop="41.0px" n1:src="@drawable/icon_version_check_dialog_cancel" />
+    </LinearLayout>
+</FrameLayout>

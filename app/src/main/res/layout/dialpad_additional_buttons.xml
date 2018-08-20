@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/hideButton" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <ImageView n1:layout_width="29.0px" n1:layout_height="39.0px" n1:src="@drawable/selector_dial_hide" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/dialButton" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <ImageView n1:layout_width="250.0px" n1:layout_height="91.0px" n1:src="@drawable/selector_make_call" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/deleteButton" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <ImageView n1:layout_width="42.0px" n1:layout_height="30.0px" n1:src="@drawable/selector_dial_delete" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

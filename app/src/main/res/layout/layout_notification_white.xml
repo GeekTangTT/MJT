@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+        <ImageView n1:id="@id/notify_imageLog" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="13.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <LinearLayout n1:orientation="vertical" n1:padding="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/notify_imageLog">
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="7.0dip" n1:layout_marginTop="4.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="#fff5f5f5" n1:id="@id/notify_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/title_app_chat" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="13.0sp" n1:textColor="#fff5f5f5" n1:id="@id/notify_xmpp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="" n1:layout_toRightOf="@id/notify_name" n1:layout_centerVertical="true" />
+                <ImageView n1:id="@id/notify_xmpp_img" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/notify_xmpp" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="13.0sp" n1:textColor="#ffb4b4b4" n1:id="@id/notify_xmpp_content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="" n1:singleLine="true" n1:layout_toRightOf="@id/notify_xmpp_img" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="7.0dip" n1:layout_marginTop="2.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="#fff5f5f5" n1:id="@id/notify_sip_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/title_app_sip" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="13.0sp" n1:textColor="#fff5f5f5" n1:id="@id/notify_sip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="1.0dip" n1:text="" n1:layout_toRightOf="@id/notify_sip_name" />
+                <ImageView n1:id="@id/notify_sip_img" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toRightOf="@id/notify_sip" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="13.0sp" n1:textColor="#ffb4b4b4" n1:id="@id/notify_sip_content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="" n1:singleLine="true" n1:layout_toRightOf="@id/notify_sip_img" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

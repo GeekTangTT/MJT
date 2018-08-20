@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/back" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_video_yuan_back" />
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#cc000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <ImageButton n1:id="@id/pause" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="3.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/MediaButtonCompat.Play" />
+        <SeekBar n1:id="@id/mediacontroller_progress" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="115.0dip" n1:progressDrawable="@drawable/player_setting_bright_progressbar" n1:thumb="@drawable/player_settings_bright_thumb" n1:layout_toRightOf="@id/pause" n1:layout_centerVertical="true" />
+        <ImageButton n1:id="@id/is_full_screen" n1:background="@drawable/ic_isfull_screen" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/dim_foreground_dark" n1:id="@id/time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="511244" n1:layout_toLeftOf="@id/is_full_screen" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="12.0sp" n1:textColor="@android:color/white" n1:id="@id/line" n1:paddingLeft="2.0dip" n1:paddingRight="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="/" n1:layout_toLeftOf="@id/time" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="@color/dim_foreground_dark" n1:id="@id/time_current" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="511244" n1:layout_toLeftOf="@id/line" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingTop="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageButton n1:id="@id/prev" style="@style/MediaButtonCompat.Previous" />
+        <ImageButton n1:id="@id/rew" style="@style/MediaButtonCompat.Rew" />
+        <ImageButton n1:id="@id/ffwd" style="@style/MediaButtonCompat.Ffwd" />
+        <ImageButton n1:id="@id/next" style="@style/MediaButtonCompat.Next" />
+    </LinearLayout>
+</RelativeLayout>

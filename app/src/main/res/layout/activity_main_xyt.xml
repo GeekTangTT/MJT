@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/normal_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/main_fragment_content" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_weight="1.0" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:paddingTop="14.0px" n1:paddingBottom="4.0px" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <include n1:id="@id/main_tab_radio_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/layout_siphome_tab_radio_group_xyt" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@color/bg_grey" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <ExpandableListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:childDivider="@null" n1:divider="@null" n1:dividerHeight="0.0px" n1:overScrollMode="never" />
+</com.zhy.autolayout.AutoLinearLayout>

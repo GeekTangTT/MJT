@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <VideoView n1:id="@id/video_preview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ImageView n1:id="@id/image_photo" n1:background="#ff000000" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout n1:layout_gravity="right" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/image_flash" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="16.0dip" n1:src="@drawable/ic_flash_on" />
+        <ImageView n1:id="@id/image_switch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="16.0dip" n1:src="@drawable/ic_camera" />
+    </LinearLayout>
+    <com.mjt.mjt.module.message.camera.CaptureLayout
+        n1:layout_gravity="bottom" n1:id="@id/capture_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mjt.mjt.module.message.camera.FoucsView
+        n1:layout_gravity="center" n1:id="@id/fouce_view" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</FrameLayout>

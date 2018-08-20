@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView n1:id="@id/horizontal_sv" n1:background="@android:color/white" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:overScrollMode="never">
+        <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_title" n1:paddingTop="57.0px" n1:paddingBottom="40.0px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_width="8.0px" n1:layout_height="32.0px" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_company_start" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/company_title_deep" n1:id="@id/tv_company_title" n1:paddingLeft="10.0px" n1:paddingRight="14.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

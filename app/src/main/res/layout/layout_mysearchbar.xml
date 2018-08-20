@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusable="true" n1:focusableInTouchMode="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="110.0px">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/lin_searchview" n1:background="@drawable/shape_white_r5" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:layout_marginLeft="35.0px" n1:layout_weight="11.0">
+            <EditText n1:textSize="32.0px" n1:textColor="@color/item_text" n1:textColorHint="@color/item_hint" n1:id="@id/et_search" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="35.0px" n1:hint="@string/default_hint" n1:singleLine="true" n1:drawableLeft="@drawable/search" n1:drawablePadding="19.0px" n1:imeOptions="actionSearch" />
+        </LinearLayout>
+        <TextView n1:textSize="32.0px" n1:textColor="@color/item_cancel" n1:gravity="center" n1:id="@id/tv_cancel" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:layout_marginRight="10.0px" n1:text="@string/cancel" n1:layout_weight="2.0" />
+    </LinearLayout>
+    <FrameLayout n1:id="@id/fm_enter" n1:background="@drawable/shape_white_r5" n1:layout_width="fill_parent" n1:layout_height="110.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px">
+        <TextView n1:textSize="32.0px" n1:textColor="@color/item_hint" n1:layout_gravity="center" n1:id="@id/tv_enterhint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/default_hint" n1:drawableLeft="@drawable/search" n1:drawablePadding="19.0px" />
+    </FrameLayout>
+</FrameLayout>

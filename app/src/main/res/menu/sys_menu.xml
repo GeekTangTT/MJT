@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/sys_setting" n1:id="@id/sys_menu_settings" n1:title="@string/sys_menu_settings"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:icon="@drawable/sys_account" n2:id="@id/sys_menu_account" n2:title="@string/sys_menu_account"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:icon="@drawable/sys_register" n3:id="@id/sys_menu_register" n3:title="@string/sys_menu_register"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:icon="@drawable/sys_update" n4:id="@id/sys_menu_update" n4:title="@string/sys_menu_update"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:icon="@drawable/sys_help" n5:id="@id/sys_menu_help" n5:title="@string/sys_menu_help"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item n6:icon="@drawable/sys_about" n6:id="@id/sys_menu_about" n6:title="@string/sys_menu_about"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+</menu>

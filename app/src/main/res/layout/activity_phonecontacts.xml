@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <include layout="@layout/topbar_layout" />
+        <FrameLayout n1:id="@id/v_more" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_title_more" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/v_encry_decode" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_contacts_decrypt_encrypt" n3:layout_auto_basewidth="height" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/v_encry" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_contacts_encrypt" n4:layout_auto_basewidth="height" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/v_decode" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/v_encry">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_contacts_decrypt" n5:layout_auto_basewidth="height" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n6:ptrAnimationStyle="flip" n6:ptrDrawableEnd="@drawable/default_ptr_rotate" n6:ptrDrawableStart="@drawable/default_ptr_flip" n6:ptrHeaderTextColor="@color/tv_colors_deep" n6:ptrMode="pullDownFromTop" n6:ptrOverScroll="false" n6:ptrScrollingWhileRefreshingEnabled="true" n6:ptrShowIndicator="false" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.mjt.mjt.widget.sortlist.SideBar
+            n1:id="@id/sidebar" n1:background="@android:color/transparent" n1:paddingRight="10.0px" n1:layout_width="60.0px" n1:layout_height="742.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

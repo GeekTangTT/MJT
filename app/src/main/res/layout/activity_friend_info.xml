@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <RelativeLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="471.0px">
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_head" n1:layout_width="136.0px" n1:layout_height="136.0px" n1:layout_marginTop="61.0px" n1:src="@drawable/icon_head" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="30.0px" n1:text="" n1:layout_below="@id/iv_head" n1:layout_centerHorizontal="true" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:layout_marginTop="330.0px">
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/phone_number" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_phone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="30.0px" n1:text="" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/ll_sip_call" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="58.0px" n1:layout_marginRight="30.0px" n1:layout_below="@id/tv_name" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_width="81.0px" n1:layout_height="81.0px" n1:src="@drawable/selector_details_call" />
+            <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="@color/main_colors" n1:id="@id/app_sip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="18.0px" n1:text="@string/title_app_sip" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/ll_xmpp_chat" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="58.0px" n1:layout_marginRight="60.0px" n1:layout_toLeftOf="@id/ll_sip_call" n1:layout_below="@id/tv_name">
+            <ImageView n1:layout_width="81.0px" n1:layout_height="81.0px" n1:src="@drawable/selector_details_chat" />
+            <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="@color/main_colors" n1:id="@id/app_chat" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="18.0px" n1:text="@string/title_app_chat" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_remark" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/modify_remark_name" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_shadow" n1:id="@id/tv_remark_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_recommend" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/recommend_to_friends" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/selector_bg_white" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/add_blacklist" n1:layout_weight="1.0" />
+        <com.suke.widget.SwitchButton n1:id="@id/sb_black" n1:layout_width="103.0px" n1:layout_height="63.0px" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_delete" n1:background="@drawable/selector_red" n1:layout_width="fill_parent" n1:layout_height="90.0px" n1:layout_margin="40.0px" n1:text="@string/delete" />
+</LinearLayout>

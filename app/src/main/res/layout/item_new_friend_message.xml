@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="175.0px"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ff8e8e93" n1:gravity="center_vertical" n1:id="@id/newfriend_tv_index" n1:background="@color/bg_color_white" n1:paddingLeft="30.0px" n1:layout_width="fill_parent" n1:layout_height="44.0px" n1:text="A" />
+    <com.zhy.autolayout.AutoRelativeLayout n1:orientation="horizontal" n1:id="@id/new_friend_click" n1:background="@drawable/selector_bg_white" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/new_friend_head" n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:layout_centerVertical="true" />
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="30.0px" n1:layout_toRightOf="@id/new_friend_head">
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:id="@id/new_friend_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="22.0px" />
+            <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ff9b9b9b" n1:id="@id/new_friend_desc" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="24.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:paddingRight="20.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <com.zhy.autolayout.AutoLinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/new_friend_btn" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginTop="20.0px">
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/new_friend_accept" n1:background="@drawable/selector_main_color" n1:layout_width="95.0px" n1:layout_height="55.0px" n1:text="@string/add" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/new_friend_response" n1:background="@drawable/selector_main_color" n1:layout_width="95.0px" n1:layout_height="55.0px" n1:layout_marginLeft="29.0px" n1:text="@string/reply" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

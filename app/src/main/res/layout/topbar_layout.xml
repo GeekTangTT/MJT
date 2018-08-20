@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:orientation="horizontal" n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_topbar_return" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/topbar_return_iv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:id="@id/topbar_return_tv" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/topbar_title_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layout_centerInParent="true" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.olym.mjt.widget.SearchEditView n1:id="@id/v_search" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <com.olym.mjt.widget.MyGridView n1:gravity="fill" n1:id="@id/grid_view" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_margin="10.0dip" n1:listSelector="#00000000" n1:cacheColorHint="#00000000" n1:horizontalSpacing="20.0dip" n1:verticalSpacing="20.0dip" n1:numColumns="5" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_tips" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="205.0px" n1:text="@string/input_old_gesture_password" />
+    <com.mjt.mjt.widget.applock.LockPatternView n1:id="@id/lockview" n1:layout_width="580.0px" n1:layout_height="580.0px" n1:layout_marginTop="64.0px" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/main_colors" n1:id="@id/tv_forgotpassword" n1:padding="15.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0px" n1:layout_marginRight="15.0px" n1:text="@string/forgot_password" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/notification_settings" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/settings_sound" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/clear_cache" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/clear_cache" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:id="@id/cache_size" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" />
+        <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/ll_upload_log_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/send_zip" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/upload_logs" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="29.0px" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_about" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/about" n1:layout_weight="1.0" />
+        <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+    </LinearLayout>
+    <View n1:id="@id/v_about" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_message_status" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/message_status" n1:layout_weight="1.0" />
+            <ImageView n1:layout_width="15.0px" n1:layout_height="26.0px" n1:layout_marginLeft="30.0px" n1:layout_marginRight="30.0px" n1:src="@drawable/icon_right_arrow" />
+        </LinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_voip" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height">
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0px" n1:text="@string/secure_mode" n1:layout_weight="1.0" />
+        <com.suke.widget.SwitchButton n1:id="@id/sb_voip" n1:layout_width="103.0px" n1:layout_height="63.0px" n1:layout_marginRight="30.0px" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <View n1:id="@id/v_voip" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:id="@id/v_logout1" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:gravity="center" n1:id="@id/tv_logout" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/normal_item_height" n1:text="@string/logout" />
+    <View n1:id="@id/v_logout2" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+</LinearLayout>

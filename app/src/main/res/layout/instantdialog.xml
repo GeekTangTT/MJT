@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/shape_corner_white_color" n1:layout_width="522.0px" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/instant_tip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="40.0px" n1:layout_marginTop="45.0px" n1:text="发送给:" />
+        <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/instant_top" n1:layout_width="fill_parent" n1:layout_height="80.0px" n1:layout_marginLeft="40.0px" n1:layout_marginTop="25.0px" n1:layout_below="@id/instant_tip">
+            <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/instant_img" n1:layout_width="80.0px" n1:layout_height="80.0px" n1:src="@drawable/icon_head" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/instant_nickname" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="21.0px" n1:text="111" n1:layout_toRightOf="@id/instant_img" n1:layout_centerVertical="true" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View n1:id="@id/instant_line" n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="29.0px" n1:layout_below="@id/instant_top" />
+        <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/instant_img_re" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="35.0px" n1:layout_below="@id/instant_line">
+            <TextView n1:textSize="28.0px" n1:textColor="@color/tv_colors_shadow" n1:id="@id/instant_txt" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="40.0px" n1:singleLine="true" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/instant_showImage" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="250.0px" n1:layout_centerInParent="true" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View n1:id="@id/instant_line_bottom" n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="35.0px" n1:layout_below="@id/instant_img_re" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="89.0px" n1:layout_below="@id/instant_line_bottom">
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="#ff0091ff" n1:gravity="center" n1:id="@id/instant_cancel" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/cancel" n1:layout_weight="1.0" />
+            <View n1:background="@color/gray_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="#ff0091ff" n1:gravity="center" n1:id="@id/instant_sure" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/sure" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</FrameLayout>

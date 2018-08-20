@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/record_bg_large" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="16.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/voice_seconds" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginTop="5.0dip" n1:drawableLeft="@drawable/chat_record" n1:drawablePadding="10.0dip" />
+    <ImageView n1:id="@id/microphone_image_view" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/audio_volume_level" n1:contentDescription="@string/app_name" />
+    <ImageView n1:id="@id/rubish_voice" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/record_cancel_normal_large" n1:contentDescription="@string/app_name" />
+    <TextView n1:textSize="16.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/voice_tip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:text="@string/motalk_voice_chat_tip_3" />
+</LinearLayout>

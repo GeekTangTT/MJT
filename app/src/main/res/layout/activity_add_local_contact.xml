@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <include layout="@layout/topbar_layout" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center" n1:id="@id/tv_save" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:text="@string/sava" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="114.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0px" n1:text="@string/name" />
+        <EditText n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:gravity="center_vertical" n1:id="@id/et_name" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="70.0px" n1:maxLines="1" n1:maxLength="35" n1:textCursorDrawable="@drawable/main_color_cursor" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="30.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="114.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0px" n1:text="@string/phone" />
+        <EditText n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:gravity="center_vertical" n1:id="@id/et_phone" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="70.0px" n1:maxLines="1" n1:maxLength="15" n1:inputType="phone" n1:textCursorDrawable="@drawable/main_color_cursor" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="30.0px" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_delete" n1:background="@drawable/selector_red" n1:layout_width="fill_parent" n1:layout_height="90.0px" n1:layout_margin="40.0px" n1:text="@string/delete" />
+</com.zhy.autolayout.AutoLinearLayout>

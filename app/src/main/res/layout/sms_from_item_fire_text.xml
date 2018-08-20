@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/time_tv" n1:background="@drawable/chatsystem_bg" n1:layout_marginTop="5.0dip" n1:layout_centerInParent="true" style="@style/ChattingUISystem" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout n1:gravity="right" n1:orientation="horizontal" n1:padding="3.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/chat_head_iv" n1:layout_width="96.0px" n1:layout_height="96.0px" n1:layout_marginRight="12.0px" n1:src="@drawable/sms_chat_from_head" n1:layout_alignParentRight="true" n1:contentDescription="@string/app_name" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:id="@id/nick_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:layout_toLeftOf="@id/chat_head_iv" />
+        <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/auto_from_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/chat_head_iv" n1:layout_below="@id/nick_name">
+            <com.zhy.autolayout.AutoLinearLayout n1:gravity="center" n1:id="@id/chat_warp_fire_text_view" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true">
+                <ImageView n1:id="@id/chat_from_firetext_destory" n1:background="@drawable/burn_message_destory" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <ProgressBar n1:id="@id/progress" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="3.0dip" n1:layout_toLeftOf="@id/chat_warp_fire_text_view" n1:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small" />
+            <ImageView n1:id="@id/failed_img_view" n1:background="@drawable/im_send_failed_bg" n1:visibility="gone" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginRight="3.0dip" n1:layout_toLeftOf="@id/chat_warp_fire_text_view" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+            <ImageView n1:id="@id/imageview_read" n1:background="@drawable/send_to" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="3.0dip" n1:layout_toLeftOf="@id/chat_warp_fire_text_view" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/edit_room_back" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" />
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/white" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="@string/back" />
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/edit_room_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/group_info" n1:layout_centerInParent="true" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@color/main_colors" n1:gravity="center" n1:id="@id/save_edit" n1:paddingLeft="29.0px" n1:paddingRight="29.0px" n1:layout_width="wrap_content" n1:layout_height="89.0px" n1:text="@string/sava" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="31.0px">
+        <EditText n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:textColorHint="#ffc7c7cd" n1:gravity="center_vertical" n1:id="@id/room_edit" n1:background="@drawable/shape_corner_white_color" n1:paddingLeft="5.0px" n1:paddingRight="5.0px" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="15.0px" n1:textCursorDrawable="@drawable/main_color_cursor" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@drawable/selector_bg_white" n1:paddingLeft="20.0px" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:paddingRight="26.0px" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_head" n1:layout_width="100.0px" n1:layout_height="100.0px" n1:src="@drawable/icon_head" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_unread" n1:background="@drawable/shape_bg_unread" n1:layout_width="44.0px" n1:layout_height="44.0px" n1:layout_marginLeft="78.0px" n1:text="99" n1:layout_alignTop="@id/iv_head" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:ellipsize="end" n1:id="@id/tv_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:layout_marginRight="206.0px" n1:maxEms="12" n1:singleLine="true" n1:layout_toRightOf="@id/iv_head" n1:layout_alignTop="@id/iv_head" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ff9b9b9b" n1:ellipsize="end" n1:id="@id/tv_content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="206.0px" n1:layout_marginBottom="5.0px" n1:lines="1" n1:layout_alignLeft="@id/tv_name" n1:layout_alignBottom="@id/iv_head" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffb2b2b2" n1:id="@id/tv_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignTop="@id/iv_head" n1:layout_alignParentRight="true" />
+        <ImageView n1:id="@id/disturb" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0px" n1:src="@drawable/icon_disturb" n1:layout_alignBottom="@id/iv_head" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="20.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

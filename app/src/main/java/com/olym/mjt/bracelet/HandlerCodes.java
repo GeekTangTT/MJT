@@ -1,0 +1,52 @@
+package com.olym.mjt.bracelet;
+
+public class HandlerCodes
+{
+    public static final int ABOUT_BRACELET_UI = 10;
+    public static final int BRACELET_STATE_1 = 21;
+    public static final int BRACELET_STATE_2 = 22;
+    public static final int BRACELET_STATE_3 = 23;
+    public static final int BRACELET_STATE_4 = 24;
+    public static final int CONFIG_BRACELET_0 = 31;
+    public static final int CONFIG_BRACELET_1 = 32;
+    public static final int CONFIG_NEW_BRACELET_0 = 70;
+    public static final int CONNECTED = 110;
+    public static final int CONNECTED_SE = 118;
+    public static final int CONNECTING = 112;
+    public static final int CONNECTING_0 = 125;
+    public static final int CONNECTING_1 = 113;
+    public static final int CONNECTING_2 = 114;
+    public static final int CONNECTING_3 = 115;
+    public static final int CONNECTING_TIMEOUT = 116;
+    public static final int CONNECTING_UNPAIR = 117;
+    public static final int CONNECT_AUTO_POW_OFF = 120;
+    public static final int CONNECT_ERROR = 119;
+    public static final int DISCONNECT = 111;
+    public static final int LOCATION_0 = 60;
+    public static final int LOCATION_1 = 61;
+    public static final int MAIN_0 = 80;
+    public static final int MAIN_INIT_MAP_1 = 81;
+    public static final int MY_PAGER_FRAGMENT_0 = 90;
+    public static final int MY_PAGER_FRAGMENT_1 = 91;
+    public static final int MY_PAGER_FRAGMENT_100 = 154;
+    public static final int MY_PAGER_FRAGMENT_101 = 155;
+    public static final int MY_PAGER_FRAGMENT_102 = 156;
+    public static final int MY_PAGER_FRAGMENT_103 = 157;
+    public static final int MY_PAGER_FRAGMENT_2 = 92;
+    public static final int MY_PAGER_FRAGMENT_3 = 93;
+    public static final int MY_PAGER_FRAGMENT_4 = 94;
+    public static final int MY_PAGER_FRAGMENT_FooterComplete = 152;
+    public static final int MY_PAGER_FRAGMENT_HeaderComplete = 151;
+    public static final int MY_PAGER_FRAGMENT_UPLOAD_SHOWHEADER = 153;
+    public static final int MY_PAGER_FRAGMENT_UPLOAD_START_FRESHUI = 150;
+    public static final int PUSH_INFO_0 = 50;
+    public static final int RECODE_1 = 45;
+    public static final int SCAN_CONNECT = 100;
+    public static final int SCAN_DFU = 106;
+    public static final int SCAN_EXTRA_1 = 103;
+    public static final int SCAN_EXTRA_2 = 104;
+    public static final int SCAN_EXTRA_3 = 105;
+    public static final int SCAN_RECONNECT_NORMAL = 101;
+    public static final int WEAR_PLACE_1 = 41;
+    public static final int WEAR_PLACE_2 = 42;
+}

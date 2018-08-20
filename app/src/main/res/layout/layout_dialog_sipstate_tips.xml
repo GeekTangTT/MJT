@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/view_root" n1:background="@color/half_transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:background="@drawable/shape_corner_white_color" n1:layout_width="541.0px" n1:layout_height="210.0px">
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:gravity="center" n1:id="@id/tv_dialog_content" n1:layout_width="wrap_content" n1:layout_height="120.0px" n1:text="@string/netword_error_retry" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:gravity="center" n1:id="@id/tv_dialog_right_button" n1:layout_width="fill_parent" n1:layout_height="89.0px" n1:text="@string/sure" />
+    </LinearLayout>
+</FrameLayout>

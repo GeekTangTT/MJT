@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/message_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/title_app_sms" n1:layout_centerInParent="true" />
+        <ImageButton n1:id="@id/write_sms" n1:background="@drawable/write_sms_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="25.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.mjt.mjt.widget.swipeview.SwipeMenuListView
+        n1:id="@id/sms_listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:drawSelectorOnTop="false" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <com.zhy.autolayout.AutoLinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/local_video_back" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/backimg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" />
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/white" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="@string/local_video" n1:layout_centerVertical="true" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout n1:id="@id/local_video_select" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_title_more" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.mjt.mjt.widget.PullToRefreshSlideListView n1:id="@id/pull_refresh_list" n1:background="@color/normal_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:ptrAnimationStyle="flip" n3:ptrDrawableEnd="@drawable/default_ptr_rotate" n3:ptrDrawableStart="@drawable/default_ptr_flip" n3:ptrHeaderTextColor="@color/black" n3:ptrMode="both" n3:ptrOverScroll="false" n3:ptrScrollingWhileRefreshingEnabled="true" n3:ptrShowIndicator="false" n3:slideMode="right" n3:slideRightAction="reveal" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</com.zhy.autolayout.AutoLinearLayout>

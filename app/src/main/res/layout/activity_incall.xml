@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/ll_bg" n1:background="@drawable/bg_incall" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="26.0px" n1:layout_marginTop="83.0px" n1:layout_marginRight="26.0px">
+        <ImageView n1:id="@id/iv_hide" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="right" n1:background="@drawable/shape_corner_incall_net_bg" n1:visibility="invisible" n1:layout_width="157.0px" n1:layout_height="60.0px" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/tv_size_larger" n1:textColor="@color/white" n1:layout_gravity="center_horizontal" n1:id="@id/call_status_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/incoming_call" />
+    <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="222.0px">
+        <ImageView n1:id="@id/iv_info" n1:visibility="gone" n1:layout_width="72.0px" n1:layout_height="72.0px" n1:layout_marginLeft="66.0px" n1:src="@drawable/logo_sm9" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/icon_call_logo" n1:layout_width="228.0px" n1:layout_height="222.0px" n1:layout_marginTop="36.0px" n1:src="@drawable/icon_call_logo" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="60.0px" n1:textColor="@color/white" n1:id="@id/contact_name_display_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="85.0px" n1:text="" />
+        <Chronometer n1:textSize="@dimen/tv_size_larger" n1:textColor="@color/white" n1:id="@id/elapsedTime" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="42.0px" n1:text="" />
+    </LinearLayout>
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="306.0px">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/inCallAnswerControls" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/img_endcall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="227.0px">
+                <ImageView n1:layout_width="145.0px" n1:layout_height="145.0px" n1:src="@drawable/selector_hangup" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:paddingTop="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hungup" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/img_answercall" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <ImageView n1:layout_width="145.0px" n1:layout_height="145.0px" n1:src="@drawable/selector_answer" n3:layout_auto_basewidth="height" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:paddingTop="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/answer_call" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/inCallControls" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="79.0px">
+                <ImageView n1:id="@id/img_ic_mute" n1:layout_width="151.0px" n1:layout_height="151.0px" n1:src="@drawable/selector_mute" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:paddingTop="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mute" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/ic_endcall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="79.0px">
+                <ImageView n1:layout_width="145.0px" n1:layout_height="145.0px" n1:src="@drawable/selector_hangup" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:paddingTop="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hungup" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/img_ic_Handsfree" n1:layout_width="151.0px" n1:layout_height="151.0px" n1:src="@drawable/selector_hands_free" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:paddingTop="20.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hands_free" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

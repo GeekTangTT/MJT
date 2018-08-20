@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <RelativeLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="258.0px">
+        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_head" n1:layout_width="136.0px" n1:layout_height="136.0px" n1:src="@drawable/icon_head" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <View n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="30.0px" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/nickname" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="60.0px" n1:text="" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="30.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/phone_number" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_phone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="60.0px" n1:text="" />
+    </LinearLayout>
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_add" n1:background="@drawable/selector_main_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="90.0px" n1:layout_marginLeft="40.0px" n1:layout_marginTop="60.0px" n1:layout_marginRight="40.0px" n1:text="@string/add_friend" />
+</LinearLayout>

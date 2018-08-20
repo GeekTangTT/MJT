@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mjt.mjt.widget.DivideRadioGroup n1:orientation="horizontal" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <RadioButton n1:id="@id/main_tab_message" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/title_app_chat" n1:drawableTop="@drawable/tab_message_bg" style="@style/IMTabButton" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="center|top" n1:id="@id/main_tab_one_tv" n1:background="@drawable/shape_bg_unread" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="15.0dip" n1:text="" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <RadioButton n1:id="@id/main_tab_contacts" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/title_app_contacts" n1:drawableTop="@drawable/tab_contacts_bg" style="@style/IMTabButton" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="center|top" n1:id="@id/main_tab_friend_tv" n1:background="@drawable/shape_bg_unread" n1:visibility="gone" n1:layout_width="18.0px" n1:layout_height="18.0px" n1:layout_marginLeft="18.0dip" n1:text="" n3:layout_auto_basewidth="height" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/main_tab_dial_frame" n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <RadioButton n1:id="@id/main_tab_dial" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/title_app_sip" n1:drawableTop="@drawable/tab_dialer_bg" style="@style/IMTabButton" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="center|top" n1:id="@id/main_tab_call_tv" n1:background="@drawable/shape_bg_unread" n1:visibility="gone" n1:layout_width="18.0px" n1:layout_height="18.0px" n1:layout_marginLeft="18.0dip" n1:text="" n4:layout_auto_basewidth="height" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/main_tab_sms_frame" n1:background="@null" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <RadioButton n1:id="@id/main_tab_sms" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/title_app_sms" n1:drawableTop="@drawable/tab_sms_bg" style="@style/IMTabButton" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="center|top" n1:id="@id/main_tab_sms_tv" n1:background="@drawable/shape_bg_unread" n1:visibility="gone" n1:layout_width="18.0px" n1:layout_height="18.0px" n1:layout_marginLeft="18.0dip" n1:text="" n5:layout_auto_basewidth="height" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <RadioButton n1:id="@id/main_tab_mine" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/mine" n1:drawableTop="@drawable/tab_mine_bg" style="@style/IMTabButton" />
+        <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:layout_gravity="center|top" n1:background="@drawable/shape_bg_unread" n1:visibility="invisible" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="15.0dip" n1:text="" n6:layout_auto_basewidth="height" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</com.mjt.mjt.widget.DivideRadioGroup>

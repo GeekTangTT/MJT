@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="?android:activatedBackgroundIndicator" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="56.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@android:id/icon" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:src="@drawable/ic_contact_picture" n1:scaleType="centerCrop" n1:cropToPadding="true" style="@style/ChipIconStyle" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:paddingTop="8.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="8.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:textSize="16.0sp" n1:ellipsize="end" n1:id="@android:id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:alpha="0.87" style="@style/ChipTitleStyle" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="14.0sp" n1:ellipsize="end" n1:id="@android:id/text1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:alpha="0.54" style="@style/ChipSubtitleStyle" />
+            <TextView n1:textSize="12.0sp" n1:ellipsize="end" n1:id="@android:id/text2" n1:paddingLeft="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:alpha="0.54" style="@style/ChipSubtitleStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

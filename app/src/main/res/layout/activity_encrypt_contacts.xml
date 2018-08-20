@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <include layout="@layout/topbar_layout" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center" n1:id="@id/tv_edit" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:text="@string/edit" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n2:ptrAnimationStyle="flip" n2:ptrDrawableEnd="@drawable/default_ptr_rotate" n2:ptrDrawableStart="@drawable/default_ptr_flip" n2:ptrHeaderTextColor="@color/tv_colors_deep" n2:ptrMode="disabled" n2:ptrOverScroll="false" n2:ptrScrollingWhileRefreshingEnabled="true" n2:ptrShowIndicator="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.mjt.mjt.widget.sortlist.SideBar
+            n1:id="@id/sidebar" n1:background="@android:color/transparent" n1:paddingRight="10.0px" n1:layout_width="60.0px" n1:layout_height="742.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <RelativeLayout n1:gravity="center_vertical" n1:id="@id/rl_all_action" n1:background="@color/bg_color_white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="88.0px" n1:layout_alignParentBottom="true">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_all_select" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <ImageView n1:id="@id/iv_choose_all" n1:layout_width="60.0px" n1:layout_height="60.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/selector_choose" />
+                <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="13.0px" n1:text="@string/all_selecte" />
+            </LinearLayout>
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:gravity="center_vertical" n1:id="@id/tv_decrypt" n1:paddingLeft="10.0px" n1:paddingRight="10.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="20.0px" n1:text="@string/decry" n1:layout_alignParentRight="true" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:gravity="center_vertical" n1:id="@id/tv_encrypt" n1:paddingLeft="10.0px" n1:paddingRight="10.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="20.0px" n1:text="@string/encry" n1:layout_toLeftOf="@id/tv_decrypt" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

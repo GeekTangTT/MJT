@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <include layout="@layout/topbar_layout" />
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center" n1:id="@id/v_add_group" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="15.0px" n1:text="@string/make_group_chat" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n2:ptrAnimationStyle="flip" n2:ptrDrawableEnd="@drawable/default_ptr_rotate" n2:ptrDrawableStart="@drawable/default_ptr_flip" n2:ptrHeaderTextColor="@color/tv_colors_deep" n2:ptrMode="pullDownFromTop" n2:ptrOverScroll="false" n2:ptrScrollingWhileRefreshingEnabled="true" n2:ptrShowIndicator="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</com.zhy.autolayout.AutoLinearLayout>

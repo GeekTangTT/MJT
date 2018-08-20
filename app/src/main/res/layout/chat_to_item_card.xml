@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/time_tv" n1:background="@drawable/chatsystem_bg" n1:layout_marginTop="5.0dip" n1:layout_centerInParent="true" style="@style/ChattingUISystem" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.zhy.autolayout.AutoRelativeLayout n1:gravity="left" n1:orientation="horizontal" n1:padding="3.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/chat_head_iv" n1:layout_width="96.0px" n1:layout_height="96.0px" n1:layout_marginLeft="12.0px" n1:src="@drawable/icon_head" n1:layout_alignParentLeft="true" n1:contentDescription="@string/app_name" />
+            <TextView n1:textSize="@dimen/tv_size_small" n1:id="@id/nick_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_toRightOf="@id/chat_head_iv" />
+            <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="210.0dip" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/chat_head_iv" n1:layout_below="@id/nick_name">
+                <com.zhy.autolayout.AutoRelativeLayout n1:gravity="center" n1:id="@id/chat_to_warp_view" n1:background="@drawable/chat_to_cardwrap_bg" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="90.0dip" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true">
+                    <com.zhy.autolayout.AutoRelativeLayout n1:id="@id/view_top" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <ImageView n1:id="@id/chat_to_head" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="5.0dip" n1:src="@drawable/icon_head" n1:scaleType="fitXY" n1:adjustViewBounds="true" n1:maxWidth="40.0dip" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+                        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/chat_to_head" n1:layout_centerVertical="true">
+                            <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/black" n1:id="@id/person_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="5.0dip" n1:text="" n1:layout_weight="1.0" n1:layout_centerVertical="true" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                    <View n1:id="@id/line_view" n1:background="@color/viewcolor" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="9.0dip" n1:layout_below="@id/view_top" />
+                    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/cardcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="3.0dip" n1:text="@string/business_card" n1:layout_below="@id/line_view" n1:layout_alignParentLeft="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <ProgressBar n1:id="@id/card_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:layout_toRightOf="@id/chat_to_warp_view" n1:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small" />
+                <ImageView n1:id="@id/unread_img_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:src="@drawable/new_tips" n1:layout_toRightOf="@id/card_progress" n1:layout_centerVertical="true" n1:contentDescription="@string/app_name" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <CheckBox n1:id="@id/chat_check" n1:background="@drawable/checkbox_style" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="12.0px" n1:button="@null" n1:layout_alignParentRight="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

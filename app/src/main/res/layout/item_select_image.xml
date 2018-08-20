@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@mipmap/default_error" n1:scaleType="centerInside" />
+    <View n1:id="@id/mask" n1:background="#88000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ImageView n1:layout_gravity="center|right|top" n1:id="@id/checkmark" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.5dip" n1:layout_marginRight="5.5dip" n1:src="@mipmap/btn_unselected" />
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/dial_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <RelativeLayout n1:id="@id/button1" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="1" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button2" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="2" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="ABC" n1:includeFontPadding="false" n1:layout_below="@id/b2" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button3" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="3" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="DEF" n1:includeFontPadding="false" n1:layout_below="@id/b3" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View n1:background="@color/dial_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <RelativeLayout n1:id="@id/button4" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="4" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="GHI" n1:includeFontPadding="false" n1:layout_below="@id/b4" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button5" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b5" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="5" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="JKL" n1:includeFontPadding="false" n1:layout_below="@id/b5" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout n1:background="@color/gray_color" n1:layout_width="1.0dip" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button6" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b6" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="6" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="MNO" n1:includeFontPadding="false" n1:layout_below="@id/b6" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View n1:background="@color/dial_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <RelativeLayout n1:id="@id/button7" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b7" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="7" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="PQRS" n1:includeFontPadding="false" n1:layout_below="@id/b7" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button8" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b8" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="8" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="TUV" n1:includeFontPadding="false" n1:layout_below="@id/b8" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button9" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b9" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="9" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="WXYZ" n1:includeFontPadding="false" n1:layout_below="@id/b9" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View n1:background="@color/dial_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <LinearLayout n1:orientation="horizontal" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <RelativeLayout n1:layout_gravity="center" n1:id="@id/buttonstar" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="*" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/button0" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:id="@id/b0" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="0" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/tv_size_dial_minor" n1:textColor="@color/tv_dial_num_minor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="+" n1:includeFontPadding="false" n1:layout_below="@id/b0" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View n1:background="@color/dial_line" n1:layout_width="1.0px" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:id="@id/buttonpound" n1:background="@drawable/sip_dialnumberselect" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textSize="@dimen/tv_size_dial_main" n1:textColor="@color/tv_dial_num_main" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dial_number_top_padding" n1:text="\#" n1:includeFontPadding="false" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View n1:background="@color/dial_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

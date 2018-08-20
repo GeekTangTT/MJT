@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/shape_corner_search_grey_bg" n1:layout_width="0.0dip" n1:layout_height="73.0px" n1:layout_marginLeft="30.0px" n1:layout_marginTop="7.0px" n1:layout_weight="1.0">
+            <ImageView n1:layout_width="26.0px" n1:layout_height="26.0px" n1:layout_marginLeft="20.0px" n1:layout_marginRight="20.0px" n1:src="@drawable/icon_search" />
+            <EditText n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/black" n1:textColorHint="#ffb2b3b6" n1:gravity="center_vertical" n1:id="@id/et_content" n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="" n1:hint="@string/search" n1:maxLines="1" n1:maxLength="11" n1:layout_weight="1.0" />
+            <ImageView n1:id="@id/iv_delete" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0px" n1:src="@drawable/icon_search_delete" />
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center" n1:id="@id/tv_cancel" n1:paddingLeft="15.0px" n1:paddingRight="15.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="15.0px" n1:layout_marginRight="15.0px" n1:text="@string/cancel" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_add_friend_search" n1:paddingLeft="30.0px" n1:paddingRight="30.0px" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="36.0px" n1:layout_marginBottom="16.0px">
+        <ImageView n1:layout_width="94.0px" n1:layout_height="94.0px" n1:src="@drawable/icon_add_friend_search" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_search1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="24.0px" n1:text="@string/search" />
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:id="@id/tv_search2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0px" n1:maxLines="1" n1:maxLength="11" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="#ff8e8e93" n1:id="@id/tv_title" n1:background="@color/bg_grey" n1:paddingLeft="30.0px" n1:paddingTop="31.0px" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="80.0px" n1:text="@string/phone_contacts" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n2:ptrAnimationStyle="flip" n2:ptrDrawableEnd="@drawable/default_ptr_rotate" n2:ptrDrawableStart="@drawable/default_ptr_flip" n2:ptrHeaderTextColor="@color/tv_colors_deep" n2:ptrMode="disabled" n2:ptrOverScroll="false" n2:ptrScrollingWhileRefreshingEnabled="true" n2:ptrShowIndicator="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

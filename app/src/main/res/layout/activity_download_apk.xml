@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:background="@drawable/bg_downapk_dialog" n1:layout_width="470.0px" n1:layout_height="334.0px">
+        <ImageView n1:id="@id/iv_bg" n1:layout_width="420.0px" n1:layout_height="32.0px" n1:layout_marginTop="220.0px" n1:src="@drawable/bg_version_check_progress_normal" n1:layout_centerHorizontal="true" />
+        <ImageView n1:id="@id/iv_fg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/bg_version_check_progress_selected" n1:layout_alignLeft="@id/iv_bg" n1:layout_alignTop="@id/iv_bg" />
+        <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/tv_progress" n1:layout_width="420.0px" n1:layout_height="32.0px" n1:layout_marginTop="220.0px" />
+    </RelativeLayout>
+</FrameLayout>

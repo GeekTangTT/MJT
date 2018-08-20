@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:id="@id/contact_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/title_app_contacts" n1:layout_centerInParent="true" />
+        <FrameLayout n1:id="@id/v_more" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="42.0px" n1:layout_height="42.0px" n1:src="@drawable/selector_title_add_friend" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:dividerHeight="0.0px" n1:overScrollMode="never" n3:ptrAnimationStyle="flip" n3:ptrDrawableEnd="@drawable/default_ptr_rotate" n3:ptrDrawableStart="@drawable/default_ptr_flip" n3:ptrHeaderTextColor="@color/tv_colors_deep" n3:ptrMode="pullDownFromTop" n3:ptrOverScroll="false" n3:ptrScrollingWhileRefreshingEnabled="true" n3:ptrShowIndicator="false" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.mjt.mjt.widget.sortlist.SideBar
+            n1:id="@id/sidebar" n1:background="@android:color/transparent" n1:paddingRight="10.0px" n1:layout_width="60.0px" n1:layout_height="742.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

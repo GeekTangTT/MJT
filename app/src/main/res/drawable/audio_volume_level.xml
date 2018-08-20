@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item n1:drawable="@drawable/record_animate_01" n1:maxLevel="0"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:drawable="@drawable/record_animate_01" n2:maxLevel="1"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:drawable="@drawable/record_animate_02" n3:maxLevel="2"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:drawable="@drawable/record_animate_03" n4:maxLevel="3"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:drawable="@drawable/record_animate_04" n5:maxLevel="4"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item n6:drawable="@drawable/record_animate_05" n6:maxLevel="5"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item n7:drawable="@drawable/record_animate_06" n7:maxLevel="6"
+      xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item n8:drawable="@drawable/record_animate_07" n8:maxLevel="7"
+      xmlns:n8="http://schemas.android.com/apk/res/android" />
+    <item n9:drawable="@drawable/record_animate_08" n9:maxLevel="8"
+      xmlns:n9="http://schemas.android.com/apk/res/android" />
+    <item n10:drawable="@drawable/record_animate_09" n10:maxLevel="9"
+      xmlns:n10="http://schemas.android.com/apk/res/android" />
+    <item n11:drawable="@drawable/record_animate_10" n11:maxLevel="10"
+      xmlns:n11="http://schemas.android.com/apk/res/android" />
+    <item n12:drawable="@drawable/record_animate_11" n12:maxLevel="11"
+      xmlns:n12="http://schemas.android.com/apk/res/android" />
+    <item n13:drawable="@drawable/record_animate_12" n13:maxLevel="12"
+      xmlns:n13="http://schemas.android.com/apk/res/android" />
+    <item n14:drawable="@drawable/record_animate_13" n14:maxLevel="13"
+      xmlns:n14="http://schemas.android.com/apk/res/android" />
+    <item n15:drawable="@drawable/record_animate_14" n15:maxLevel="14"
+      xmlns:n15="http://schemas.android.com/apk/res/android" />
+    <item n16:drawable="@drawable/record_animate_14" n16:maxLevel="15"
+      xmlns:n16="http://schemas.android.com/apk/res/android" />
+</level-list>

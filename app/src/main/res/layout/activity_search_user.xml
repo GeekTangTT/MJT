@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="103.0px">
+        <com.mjt.mjt.widget.ClearEditText
+            n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_deep" n1:textColorHint="#ffb2b3b6" n1:gravity="center_vertical" n1:id="@id/et_search" n1:background="@drawable/shape_corner_search_bg" n1:paddingLeft="84.0px" n1:paddingRight="5.0px" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_margin="15.0px" n1:hint="@string/nickname_or_phone" n1:singleLine="true" n1:inputType="phone" n1:imeOptions="actionSearch" n1:textCursorDrawable="@drawable/main_color_cursor" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="53.0px" n1:src="@drawable/icon_search" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_search" n1:background="@drawable/selector_main_color" n1:layout_width="fill_parent" n1:layout_height="90.0px" n1:layout_margin="40.0px" n1:text="@string/search" />
+</LinearLayout>

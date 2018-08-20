@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="128.0px"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="#ffededee" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentTop="true" />
+    <com.zhy.autolayout.AutoRelativeLayout n1:layout_width="fill_parent" n1:layout_height="127.0px">
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:id="@id/instant_file" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="166.0px" n1:layout_marginTop="21.0px" n1:layout_marginBottom="12.0px" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+            <ImageView n1:layout_gravity="center_horizontal" n1:background="@drawable/file_instant" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="20.0px" n1:textColor="#ff858998" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/instant" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:id="@id/delete_file" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="21.0px" n1:layout_marginRight="165.0px" n1:layout_marginBottom="12.0px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <ImageView n1:layout_gravity="center_horizontal" n1:background="@drawable/file_delete_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="20.0px" n1:textColor="#ff858998" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/delete" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

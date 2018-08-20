@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:background="@drawable/burn_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mjt.mjt.module.message.view.PhotoView
+        n1:id="@id/burn_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/burn_top" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topbar_layout" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="31.0px" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:gravity="center_vertical" n1:id="@id/tv_change_gesture" n1:background="@drawable/selector_bg_white" n1:paddingLeft="31.0px" n1:layout_width="fill_parent" n1:layout_height="115.0px" n1:text="@string/change_gesture_password" />
+    <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+    <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@color/tv_colors_shadow" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="33.0px" n1:layout_marginTop="18.0px" n1:layout_marginRight="33.0px" n1:layout_marginBottom="18.0px" n1:text="@string/gesture_password_enable_tips" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="115.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="33.0px" n1:text="@string/enable_gesture_title" n1:layout_weight="1.0" />
+        <com.suke.widget.SwitchButton n1:id="@id/sb_gesture" n1:layout_width="103.0px" n1:layout_height="63.0px" n1:layout_marginRight="33.0px" n2:sb_border_width="1.0dip" n2:sb_checked_color="@color/main_colors" n2:sb_enable_effect="true" n2:sb_show_indicator="false" n2:sb_uncheck_color="#ffe6e6e6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

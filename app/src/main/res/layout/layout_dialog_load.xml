@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/iv_loading" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_loading" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/photopicker_toolbar" />
+    <GridView n1:id="@id/grid" n1:paddingBottom="?android:actionBarSize" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:horizontalSpacing="@dimen/space_size" n1:verticalSpacing="@dimen/space_size" n1:columnWidth="@dimen/image_size" n1:layout_below="@id/pickerToolbar" />
+    <RelativeLayout n1:id="@id/photo_picker_footer" n1:background="#cc000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?android:actionBarSize" n1:layout_alignParentBottom="true">
+        <Button n1:textSize="@dimen/action_text_size" n1:textColor="@color/action_text_color" n1:gravity="center" n1:id="@id/btnAlbum" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/all_image" n1:drawableRight="@drawable/text_indicator" n1:layout_centerVertical="true" style="@style/Widget.AppCompat.ActionButton" />
+        <Button n1:enabled="false" n1:textSize="@dimen/action_text_size" n1:textColor="@color/action_text_color" n1:gravity="center" n1:id="@id/btnPreview" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/preview" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/Widget.AppCompat.ActionButton" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <scale n1:duration="200" n1:pivotX="50.0%" n1:pivotY="50.0%" n1:fillAfter="false" n1:fromXScale="0.8" n1:toXScale="1.0" n1:fromYScale="0.8" n1:toYScale="1.0"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <alpha n2:duration="200" n2:fillAfter="false" n2:fromAlpha="0.0" n2:toAlpha="1.0"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</set>

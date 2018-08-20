@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout n1:padding="15.0px" n1:layout_width="180.0px" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/iv_src" n1:layout_width="150.0px" n1:layout_height="150.0px" n1:src="@drawable/icon_photo_default" n1:scaleType="centerCrop" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n1:id="@id/v_bg" n1:background="#993d3d3d" n1:layout_width="150.0px" n1:layout_height="150.0px" n3:layout_auto_basewidth="height" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ImageView n1:id="@id/iv_photo_lock" n1:visibility="gone" n1:layout_width="24.0px" n1:layout_height="30.0px" n1:src="@drawable/icon_photo_locked" n1:layout_centerInParent="true" />
+    <ImageView n1:id="@id/iv_photo_select" n1:padding="12.0px" n1:layout_width="72.0px" n1:layout_height="72.0px" n1:src="@drawable/selector_photo_select" n1:layout_alignParentRight="true" n4:layout_auto_basewidth="height" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</com.zhy.autolayout.AutoRelativeLayout>

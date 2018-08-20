@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:paddingLeft="32.0px" n1:paddingRight="32.0px" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/iv_icon" n1:layout_width="183.0px" n1:layout_height="183.0px" n1:layout_marginTop="184.0px" n1:src="@drawable/icon_login_logo_xgt" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="45.0px" n1:layout_marginTop="153.0px">
+        <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_area" n1:layout_width="189.0px" n1:layout_height="fill_parent">
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/tv_area_code" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="中国 +86" />
+            <ImageView n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0px" n1:src="@drawable/icon_area" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/phone_number" />
+        </LinearLayout>
+        <EditText n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:textColorHint="@color/tv_colors_middle" n1:gravity="center_vertical" n1:id="@id/et_phone" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="@string/input_phone_number" n1:lines="1" n1:maxLength="11" n1:inputType="phone" n1:textCursorDrawable="@drawable/main_color_cursor" />
+    </LinearLayout>
+    <View n1:id="@id/v_line_phone" n1:background="@drawable/selector_line_main_gray" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="20.0px" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="45.0px" n1:layout_marginTop="28.0px">
+        <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="189.0px" n1:layout_height="wrap_content" n1:text="@string/password" />
+        <EditText n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:textColorHint="@color/tv_colors_middle" n1:gravity="center_vertical" n1:id="@id/et_password" n1:background="@null" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:hint="@string/new_user_register" n1:lines="1" n1:maxLength="16" n1:layout_weight="1.0" n1:inputType="textPassword" n1:textCursorDrawable="@drawable/main_color_cursor" />
+        <ImageView n1:id="@id/iv_password_eye" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0px" n1:src="@drawable/selector_password_eye" />
+    </LinearLayout>
+    <View n1:id="@id/v_line_pass" n1:background="@drawable/selector_line_main_gray" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginTop="20.0px" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="32.0px">
+        <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="@color/tv_colors_shadow" n1:id="@id/tv_domain" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/edit_company_domain" />
+        <View n1:layout_width="0.0dip" n1:layout_height="1.0px" n1:layout_weight="1.0" />
+        <TextView n1:textSize="@dimen/tv_size_smallest" n1:textColor="@color/tv_colors_shadow" n1:id="@id/tv_forgotpassword" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/forgot_password" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_login" n1:background="@drawable/selector_main_color" n1:layout_width="fill_parent" n1:layout_height="89.0px" n1:layout_marginTop="58.0px" n1:text="@string/login" />
+    <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/main_colors" n1:layout_gravity="center_horizontal" n1:id="@id/tv_register" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="76.0px" n1:text="@string/title_register" />
+</LinearLayout>

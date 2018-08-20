@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:id="@id/mjtchat_linear" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout n1:background="@color/status_bar_color" n1:layout_width="fill_parent" n1:layout_height="88.0px">
+        <com.zhy.autolayout.AutoLinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/mjt_chat_back" n1:paddingLeft="21.0px" n1:paddingRight="21.0px" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/backimg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/selector_title_back" />
+            <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@android:color/white" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:text="@string/title_app_chat" n1:singleLine="true" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_large" n1:textColor="@color/tv_colors_deep" n1:ellipsize="end" n1:id="@id/mjt_user_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0px" n1:maxEms="12" n1:singleLine="true" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/mjtchat_disturb" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:src="@drawable/icon_disturb" n1:layout_toRightOf="@id/mjt_user_info" n1:layout_centerVertical="true" />
+        <com.zhy.autolayout.AutoLinearLayout n1:id="@id/mjt_roominfo" n1:paddingLeft="10.0px" n1:paddingTop="10.0px" n1:paddingRight="22.0px" n1:paddingBottom="10.0px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <ImageView n1:id="@id/mjt_room_img" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView n1:textSize="@dimen/tv_size_middle" n1:textColor="@drawable/selector_tv_title_right" n1:gravity="center_vertical" n1:id="@id/select_cancel" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="10.0px" n1:text="@string/cancel" n1:layout_toLeftOf="@id/mjt_roominfo" />
+        <ImageView n1:id="@id/msg_burn" n1:background="@drawable/sms_burn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="15.0px" n1:layout_toLeftOf="@id/mjt_roominfo" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/msg_burn_open" n1:background="@drawable/sms_burn_pre" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="15.0px" n1:layout_toLeftOf="@id/mjt_roominfo" n1:layout_centerVertical="true" />
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout n1:orientation="vertical" n1:background="@color/chat_background" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <TextView n1:textColor="@color/dark_grey" n1:gravity="center" n1:id="@id/auth_state_tip" n1:background="@color/black" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="24.0dip" n1:layout_alignParentTop="true" />
+        <com.olym.mjt.module.message.view.ChatContentView n1:id="@id/chat_content_view" n1:background="#ffefeff4" n1:paddingBottom="20.0px" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:cacheColorHint="#00000000" n1:divider="#00000000" n1:layout_below="@id/auth_state_tip" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.mjt.mjt.module.message.view.ChatBottomView
+        n1:id="@id/chat_bottom_view" n1:fadingEdge="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:cacheColorHint="#00000000" n1:divider="#00000000" n1:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoLinearLayout>

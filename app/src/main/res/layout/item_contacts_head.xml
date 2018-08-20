@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout n1:orientation="vertical" n1:background="@color/bg_color_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mjt.mjt.widget.SearchEditView
+        n1:id="@id/v_search" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_newFriend" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+            <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/new_friend_icon" n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_contacts_newfriend" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:id="@id/new_friend_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/new_friend_message" n1:layout_toRightOf="@id/new_friend_icon" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/tv_size_small" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/newfriend_tv_unread" n1:background="@drawable/shape_bg_unread" n1:visibility="invisible" n1:layout_width="35.0px" n1:layout_height="35.0px" n1:layout_marginRight="76.0px" n1:text="99" n1:layout_alignTop="@id/iv_head" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:layout_auto_basewidth="height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <View n1:id="@id/v_line_new_friend" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="19.0px" n1:layout_alignParentBottom="true" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_contacts" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+            <de.hdodenhof.circleimageview.CircleImageView n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_contacts_contacts" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/contacts" />
+        </LinearLayout>
+        <View n1:id="@id/v_line" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="19.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_group" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+            <de.hdodenhof.circleimageview.CircleImageView n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_contacts_group" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/mine_group" />
+        </LinearLayout>
+        <View n1:id="@id/v_line_1" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="19.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_invite" n1:background="@drawable/selector_bg_white" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+            <de.hdodenhof.circleimageview.CircleImageView n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_contacts_invite" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/mine_invite" />
+        </LinearLayout>
+        <View n1:id="@id/v_line_2" n1:background="@color/gray_line" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="19.0px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_company" n1:background="@drawable/selector_bg_white" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="130.0px">
+            <de.hdodenhof.circleimageview.CircleImageView n1:layout_width="100.0px" n1:layout_height="100.0px" n1:layout_marginLeft="20.0px" n1:src="@drawable/icon_contacts_company" />
+            <TextView n1:textSize="@dimen/tv_size_normal" n1:textColor="@color/tv_colors_deep" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0px" n1:text="@string/company_contacts" />
+        </LinearLayout>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
